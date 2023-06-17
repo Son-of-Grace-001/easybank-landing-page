@@ -1,0 +1,361 @@
+@import url(https://fonts.google.com/specimen/Public+Sans);
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Public San;
+}
+
+/*styling the nav bar*/
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px 20px 100px;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+}
+
+/*styling other elements in the nav bar*/
+#nav-option{
+  display: flex;
+  list-style-type: none;
+}
+#nav-option >li{
+  margin-right: 40px;
+  color: hsl(233, 8%, 62%);
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.right, .request{
+  display: flex;
+  height: 40px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+  border-radius: 20px;
+  text-transform: capitalize;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+}
+
+/*styling the top main*/
+.top-main{
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  background-color: hsla(233, 8%, 62%, 0.048);
+}
+.r-top-main{
+  padding-left: 100px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+/*innner element in r-top inside the top main*/
+.generation{
+  font-weight: 700;
+  font-size: 38px;
+}
+.take,.take2{
+  font-weight: 500;
+  color: hsl(233, 8%, 62%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.request{
+  border: none;
+}
+
+/*l-top-main*/
+.l-top-main{
+  background-image: url(./images/bg-intro-desktop.svg);
+  background-position: cover;
+  background-size: cover;
+}
+.l-top-main-new{
+  display: none;
+  background-image: url(./images/bg-intro-mobile.svg);
+  background-position: cover;
+  background-size: cover;
+}
+.mockup{
+  position: absolute;
+  top: -7%;
+  right: 0%;
+  z-index: 1;
+  width: 40%;
+}
+
+/*styling the middle main*/
+.middle-main{
+  background-color: hsl(220, 16%, 96%);
+  padding: 100px;
+}
+/*styling the middle-main element*/
+.leverage{
+  font-size: 18px;
+  color: hsl(233, 8%, 62%);
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.why{
+  font-weight: 700;
+}
+.inner-middle{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.header{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.pp{
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(233, 8%, 62%);
+}
+/*styling the inner bottom*/
+.bottom-main{
+  padding: 100px;
+  background-color: hsla(220, 14%, 96%, 0.385);
+}
+.latest{
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.inner-bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.inner-bottom>div{
+  background-color: hsl(0, 0%, 100%);
+}
+.by{
+  font-size: 12px;
+  color: hsl(233, 8%, 62%);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+.description{
+  color: hsl(233, 8%, 62%);
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+.image{
+  width: 100%;
+  height: 180px;
+}
+.header4{
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+/*styling the footer*/
+footer{
+  background-color: hsl(233, 26%, 24%);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.f-cont1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  filter: brightness(0) invert(1);
+}
+.media{
+  margin-top: 40px;
+  margin-right: 8px;
+}
+.ppp{
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.copy{
+  margin-top: 10px;
+}
+#request{
+  place-content: right;
+}
+.mobile{
+  display: none;
+  background-color: hsla(233, 8%, 62%, 0.048);
+}
+.menu{
+  display: none;
+}
+.clear{
+  display: none;
+}
+.take2{
+  display: none;
+}
+
+@media screen and (max-width:600px){
+  .nav-bar{
+    padding: 20px;
+    position: fixed;
+  }
+  .take{
+    display: none;
+  }
+  .top-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 100%;
+  }
+  .l-top-main{
+    display: none;
+  }
+  #nav-option{
+    display: none;
+    position: absolute;
+    top: 90px;
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    left: 20px;
+    padding-top: 20px;
+  }
+  #nav-option>li{
+    text-align: center;
+    margin-bottom: 42px;
+    margin-left: 18px;
+  }
+  .right{
+    display: none;
+  }
+  .mockup{
+    top: -3%;
+    width: 100%;
+  }
+  .menu{
+    display: block;
+  }
+  .inner-middle{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .leverage{
+    text-align: center;
+  }
+  .why{
+    text-align: center;
+  }
+  .inner-bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  .inner-middle >div{
+    margin-bottom: 20px;
+  }
+  .generation{
+    text-align: center;
+  }
+  .f-cont1{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  footer{
+    padding: 20px;
+  }
+  .r-top-main{
+    margin-top: 300px;
+    padding-left: 0px;
+  }
+  .take2{
+    display: block;
+    text-align: center;
+  }
+  #request-btn{
+    margin-left: 32%;
+  }
+  .middle-main{
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .bottom-main{
+    padding: 20px;
+  }
+  .medias{
+    margin-left: 30%;
+    margin-bottom: 40px;
+  }
+  .footer-p{
+    text-align: center;
+  }
+  .foot-logo{
+    margin-left: 30%;
+    margin-top: 20%;
+  }
+  .last-foot{
+    margin-top: 40px;
+  }
+  #btn{
+    margin-left: 30%;
+  }
+  .header,.pp{
+    text-align: center;
+  }
+  .lev-icon{
+    margin-left: 40%;
+  }
+  .l-top-main-new{
+    background-image: url(./images/bg-intro-mobile.svg);
+    background-position: cover;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+  }
+  @media screen and (width: 540px){
+    #btn{
+      margin-left: 35%;
+    }
+    .foot-logo{
+      margin-left: 35%;
+    }
+    .medias{
+      margin-left: 35%;
+    }
+  }
+  @media screen and (width: 280px){
+    #btn{
+      margin-left: 20%;
+    }
+    .foot-logo{
+      margin-left: 20%;
+    }
+    .medias{
+      margin-left: 20%;
+    }
+    .r-top-main{
+      margin-top: 200px;
+    }
+    #request-btn{
+      margin-left: 22%;
+    }
+  }
+}
